@@ -1,0 +1,17 @@
+@"
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.vscode/
+.ipynb_checkpoints/
+*.ipynb
+*.db
+*.sqlite
+*.log
+data/
+out/
+"@ | Out-File -Encoding utf8 .gitignore
