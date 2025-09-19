@@ -1,0 +1,11 @@
+# put your env keys here (sample only)
+TV_SQLSERVER_ODBC=Driver={ODBC Driver 17 for SQL Server};Server=HANHVU\SQLEXPRESS;Database=AutotradingDB;Trusted_Connection=Yes;
+
+# --- TradingView (tuỳ chọn, khuyến nghị để linh hoạt) ---
+TV_AUTH_TOKEN=eyJhbGciOiJSUzUxMiIsImtpZCI6InFGM2kiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJ0dl9jaGFydCIsImlhdCI6MTc1ODIwNDAwMCwiZXhwIjoxNzU5MDcxNjAwLCJ0eXBlIjoib3duZXIiLCJsYXlvdXRJZCI6IjdNYjBDRmg1Iiwib3duZXJJZCI6MzQzNDM3NjIsInNoYXJlZCI6ZmFsc2V9.HP9BEYNtDzuXufq81ML3GOT0vRn7Md1MP8X_jKTB5DGw39iyh2qUjNjUnOGokhy3FCAnKZXsVUXgQp_W93sQdSheJ9qjeN_g-pbOB9IP75gTayuVGe7PvJ1AMbcgb1R4WLpMtgmQOdv-HKcZJ8u2Vq1UXtPsWZbrhV3fq8Rtlv3q2ykVYBEpKZ9mfHRA-iDoABCRL44zGaIKQB5jCkT9S2wW6ieHX2BHB4RsGrPiDsQuTODuGc8F6mm-TKC-4LainnoKyN4mReQ-FjocPcX7rFL8ohFygOYgg1JixLX11jQUq4C_HNQCcnhL7wIRTUabwGFH507mphZC8NenLJV4zA
+# Nếu có cookie đăng nhập, dán nguyên chuỗi Set-Cookie (1 dòng). Nếu không có thì để trống.
+TV_COOKIE=
+
+# --- WS timeouts ---
+TV_WS_TIMEOUT_S=25
+TV_CLOSED_BAR_TIMEOUT_S=45

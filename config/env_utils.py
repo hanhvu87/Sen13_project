@@ -16,3 +16,14 @@ def load_env_file(path: Path) -> None:
         if (v.startswith('"') and v.endswith('"')) or (v.startswith("'") and v.endswith("'")):
             v = v[1:-1]
         os.environ.setdefault(k, v)
+
+from pathlib import Path
+import os
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / ".env", override=False)
+except Exception:
+    pass
+
+def get_env(key, default=None):
+    return os.getenv(key, default)

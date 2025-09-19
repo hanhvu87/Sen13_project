@@ -1,5 +1,7 @@
 from sqlalchemy import text
 from sqlalchemy.exc import IntegrityError
+import pyodbc
+import os
 
 def ensure_symbol_id(engine, provider: str, symbol: str, timezone: str = "UTC") -> int:
     """
@@ -59,3 +61,9 @@ def ensure_timeframe_id(engine, tf_str: str) -> int:
             {"tf": tf_str},
         ).scalar_one()
         return int(new_id)
+    
+def get_connection() -> pyodbc.Connection:
+    conn_str = os.getenv("TV_SQLSERVER_ODBC")
+    if not conn_str:
+        raise ValueError("❌ TV_SQLSERVER_ODBC chưa được set trong .env")
+    return pyodbc.connect(conn_str)
